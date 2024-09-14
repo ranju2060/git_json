@@ -1,0 +1,32 @@
+[
+    {
+      "person": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "age": 30,
+        "email": "john.doe@example.com",
+        "address": {
+          "street": "123 Main St",
+          "city": "Anytown",
+          "state": "CA",
+          "zip": "12345"
+        }
+      },
+      "skills": [
+        {
+          "name": "JavaScript",
+          "proficiency": "Advanced"
+        },
+        {
+          "name": "Node.js",
+          "proficiency": "Intermediate"
+        }
+      ],
+      "position": {
+        "title": "Software Engineer",
+        "department": "Engineering",
+        "location": "San Francisco, CA",
+        "salary": 120000
+      }
+    }
+  ]

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Data Viewer</title>
+</head>
+<body>
+    <h1>JSON Data Viewer</h1>
+    <pre id="json-data"></pre>
+
+    <script>
+        // Fetch the JSON data from the server
+        fetch('/data')
+            .then(response => response.json())
+            .then(data => {
+                // Display the JSON data in a preformatted text block
+                document.getElementById('json-data').textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => {
+                console.error('Error fetching JSON data:', error);
+            });
+    </script>
+</body>
+</html>
+
